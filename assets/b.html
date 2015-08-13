@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+        localStorage.removeItem("zlz");
+
+        console.log("window.localStorage zlz = " + localStorage.getItem("zlz"));
+        function b(){
+            console.log("page:b");
+            location.href = "example.html";
+            localStorage.setItem("zlz","1");
+            console.log("window.localStorage zlz = " + localStorage.getItem("zlz"));
+        }
+
+
+    </script>
+</head>
+<body>
+
+<button onclick="b()" >AAAAAAAAAAAAAAAA</button><br />
+</body>
+</html>
